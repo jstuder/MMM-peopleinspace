@@ -1,0 +1,22 @@
+.spacepeeps_numberCell {
+	text-align: center;
+	font-size: 85px;
+  	line-height: 85px;
+  	padding-bottom: 10px;
+}
+
+.spacepeeps_dayCell {
+}
+
+.spacepeeps_flagCell {
+	padding-left: 10px;
+	padding-right:10px;
+}
+
+.spacepeeps_flagCell img {
+	height:12px;
+}
+
+.spacepeeps_nameCell {
+}
+
