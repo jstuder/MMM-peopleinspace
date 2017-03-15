@@ -47,7 +47,6 @@ Module.register("MMM-peopleinspace",{
 
 	// Override dom generator.
 	getDom: function() {
-		Log.log("inside getdom");
 		var wrapper = document.createElement("div");
 		if (!this.loaded) {
 			wrapper.innerHTML = this.translate("LOADING");
@@ -98,10 +97,6 @@ Module.register("MMM-peopleinspace",{
 	},
 
 	getHeader: function() {
-		/*if (this.config.appendLocationNameToHeader) {
-			return this.data.header + " " + this.fetchedLocatioName;
-		}
-		*/
 		return this.data.header;
 	},
 
@@ -140,7 +135,6 @@ Module.register("MMM-peopleinspace",{
 			});
 		}
 
-		Log.log(this.person);
 		this.show(this.config.animationSpeed, {lockString:this.identifier});
 		this.loaded = true;
 		this.updateDom(this.config.animationSpeed);
@@ -152,7 +146,6 @@ Module.register("MMM-peopleinspace",{
 	 * argument delay number - Milliseconds before next update. If empty, this.config.updateInterval is used.
 	 */
 	scheduleUpdate: function(delay) {
-		Log.log("inside scheduleUpdate");
 		var nextLoad = this.config.updateInterval;
 		if (typeof delay !== "undefined" && delay >= 0) {
 			nextLoad = delay;
