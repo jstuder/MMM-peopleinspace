@@ -17,7 +17,7 @@
  {
     module: 'MMM-peopleinspace',
 	position: 'top_left', // you may choose any location
-	header: 'People in Space'
+	header: 'People in Space',
 	config: {
 		dayLabel : false,
 		showNumber: true,
